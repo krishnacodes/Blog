@@ -1,0 +1,33 @@
+---
+layout: main
+---
+
+
+{% assign cat_url  = "/depth_estimation/" %}
+{% assign cat_title = "Depth Estimation"%}
+{% assign cat_content = "We percieve world in 3D, machines do the same in pixel values, inorder bridge this Depth Estimation is formulated and is an active area of research. "%}
+
+<article class="post">
+  <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : "depth-image-black-and-white.jpg"}})" href="{{cat_url | prepend: site.baseurl}}"></a>
+  <div class="post-content">
+    <h2 class="post-title"><a href="{{cat_url | prepend: site.baseurl}}">{{cat_title}}</a></h2>
+    <p>{{ cat_content | strip_html | truncatewords: 30 }}</p>
+  </div>
+</article>
+
+
+
+{% assign cat_url  = "/adversarial_training/" %}
+{% assign cat_title = "Adversarial Training"%}
+{% assign cat_content = "State-of-the-art neural networks show execllent generalization, some times even across domains, but are susceptible to structed adversarial perturbations let's review works on generating them. "%}
+
+<article class="post">
+  <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : "adversarial_training.png"}})" href="{{cat_url | prepend: site.baseurl}}"></a>
+  <div class="post-content">
+    <h2 class="post-title"><a href="{{cat_url | prepend: site.baseurl}}">{{cat_title}}</a></h2>
+    <p>{{ cat_content | strip_html | truncatewords: 30 }}</p>
+  </div>
+</article>
+
+{% include pagination.html %}
+
