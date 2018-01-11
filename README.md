@@ -1,31 +1,38 @@
-# Flexible-Jekyll is a simple and clean theme for Jekyll
+# Summary of Deep Learning Papers in Computer Vision 
 
-![](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/promo-img.jpg?raw=true)
+[DL Papers website](https://krishnacodes.github.io/)
 
-## Demo
+In recent years the many computer vision tasks like classification, segmentation, 3d-perception, pose estimation, sketch generation and others which are considered mark of human intelligence are solved by deep neural nets with competitive accuracies sometimes even better than human performance, but neural nets have their own shortcomings like adversarial perturbations.
 
-Check the theme in action [Demo](https://artemsheludko.github.io/flexible-jekyll/)
+So deep learning is a very active area of research, i summarize all the recent papers in this blog posts.
 
-The main page would look like this:
+## Deep Learning in a nutshell
+![](https://github.com/krishnacodes/krishnacodes.github.io/blob/master/assets/img/quotebengio.png?raw=true)
 
-![Main page preview](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/home-page.jpg?raw=true)
+## Some awesome links for enthusiasts
 
-The post page would look like this:
+[CS231N -Stanford groups basic computer vision course](http://cs231n.stanford.edu/)
+[CS 294 Berkeley Deep RL Course](http://rll.berkeley.edu/deeprlcourse/)
+[David Silvers RL Course](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
+[]()
 
-![Post page preview](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/post-example.jpg?raw=true)
+## Some well known people in the area(follow everything they write from arXiv to twitter.) 
 
-## Features
+[Andrej karpathy](http://cs.stanford.edu/people/karpathy/)
+[Geoffrey Hinton](http://www.cs.toronto.edu/~hinton/)
+[Yann LeCun](http://yann.lecun.com/)
+[Yoshua Bengio](http://www.iro.umontreal.ca/~bengioy/yoshua_en/)
+[Andrew NG](http://www.andrewng.org/)
 
-- [Google Fonts](https://fonts.google.com/)
-- [Font Awesome](http://fontawesome.io/)
-- [Disqus](https://disqus.com/)
-- [Analytics](https://analytics.google.com/analytics/web/)
-- Support Emoji
+[Ian Goodfellow](https://twitter.com/goodfellow_ian?lang=en)
 
-## Installation:
-
-Fork the ``master`` branch and delete ``gh-pages`` branch in it. This is important because ``gh-pages`` branch is used here only to host the blog. You should be using the master branch as the source and create a fresh ``gh-pages`` branch.
-
+[Soumith Chintala](https://research.fb.com/people/chintala-soumith/)
+[Jurgen Schmidhuber ](http://people.idsia.ch/~juergen/)
+[Sanja Fidler](http://www.cs.utoronto.ca/~fidler/)
+[Raquel Urtasun](http://www.cs.toronto.edu/~urtasun/)
+[Andrew Zisserman](https://www.robots.ox.ac.uk/~az/)
+[Jitendra Malik](https://people.eecs.berkeley.edu/~malik/)
+[Rob Fergus](https://cs.nyu.edu/~fergus/pmwiki/pmwiki.php)
+[]()
 ### License
-
 GNU General Public License v3.0
