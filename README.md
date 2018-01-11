@@ -17,6 +17,22 @@ So deep learning is a very active area of research, i summarize all the recent p
 
 [David Silvers RL Course](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
 
+# Acknowledgement
+
+My current Lab [Video Analytics Lab(VAL),IISc](http://val.serc.iisc.ernet.in/valweb/).
+
+## Few professors i worked under 
+[R. Venkatesh Babu](https://scholar.google.co.in/citations?user=cVg7HrEAAAAJ&hl=en) - (1 Year)
+
+[Amit Sethi](https://www.ee.iitb.ac.in/web/people/faculty/home/asethi) (1 Year)
+
+[S N Omkar](https://scholar.google.co.in/citations?user=3bC5WuQAAAAJ) (3 Months)
+
+[Neelesh B. Mehta](https://scholar.google.co.in/citations?user=tnulwREAAAAJ) ()
+
+[Gaurav Trivedi](https://www.iitg.ernet.in/eee/gaurav.html)
+
+[Suresh Sundaram](https://www.iitg.ernet.in/eee/suresh.html)
 
 
 
