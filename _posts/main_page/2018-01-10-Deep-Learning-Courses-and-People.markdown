@@ -1,6 +1,19 @@
-# Summary of Deep Learning Papers in Computer Vision 
+---
+layout: post
+title: Deep Learning Courses and People 
+date: 2018-01-10 13:32:20 +0300
+description: Few Resources for starting with deep learning, legenedary people in the area and few professors i had the pleasure to work under.
+img: deep_learning_heros.jpg # Add image post (optional)
+tags: [Deep Learning]
+content_type: main_page
+---
 
-[DL Papers website](https://krishnacodes.github.io/)
+Few Resources for starting with deep learning, legenedary people in the area and few professors i had the pleasure to work under.
+
+
+# [Summary of Deep Learning Papers in Computer Vision](https://krishnacodes.github.io/)
+
+
 
 In recent years the many computer vision tasks like classification, segmentation, 3d-perception, pose estimation, sketch generation and others which are considered mark of human intelligence are solved by deep neural nets with competitive accuracies sometimes even better than human performance, but neural nets have their own shortcomings like adversarial perturbations.
 
@@ -9,7 +22,7 @@ So deep learning is a very active area of research, i summarize all the recent p
 ## Deep Learning in a nutshell
 ![](https://github.com/krishnacodes/krishnacodes.github.io/blob/master/assets/img/quotebengio.png?raw=true)
 
-## Some awesome links for enthusiasts
+## Some awesome resources for enthusiasts
 
 [CS231N -Stanford groups basic computer vision course](http://cs231n.stanford.edu/)
 
@@ -19,7 +32,8 @@ So deep learning is a very active area of research, i summarize all the recent p
 
 # Acknowledgement
 
-My current Lab [Video Analytics Lab(VAL),IISc](http://val.serc.iisc.ernet.in/valweb/).
+## My current Lab 
+[Video Analytics Lab(VAL),IISc](http://val.serc.iisc.ernet.in/valweb/).
 
 ## Few professors i worked under 
 [R. Venkatesh Babu](https://scholar.google.co.in/citations?user=cVg7HrEAAAAJ&hl=en) - (1 Year)
@@ -36,9 +50,10 @@ My current Lab [Video Analytics Lab(VAL),IISc](http://val.serc.iisc.ernet.in/val
 
 
 
-## Some well known people in the area(follow everything they write from arXiv to twitter.) 
+## Some well known people in the area
+(follow everything they write from arXiv to twitter.) 
 
-[Andrej karpathy](http://cs.stanford.edu/people/karpathy/)
+[Andrej karpathy](http://cs.stanford.edu/people/karpathy/) &nbsp all
 
 [Geoffrey Hinton](http://www.cs.toronto.edu/~hinton/)
 
@@ -63,7 +78,3 @@ My current Lab [Video Analytics Lab(VAL),IISc](http://val.serc.iisc.ernet.in/val
 [Jitendra Malik](https://people.eecs.berkeley.edu/~malik/)
 
 [Rob Fergus](https://cs.nyu.edu/~fergus/pmwiki/pmwiki.php)
-
-
-### License
-GNU General Public License v3.0
