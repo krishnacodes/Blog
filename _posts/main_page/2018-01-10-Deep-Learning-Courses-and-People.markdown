@@ -20,7 +20,8 @@ In recent years the many computer vision tasks like classification, segmentation
 So deep learning is a very active area of research, i summarize all the recent papers in this blog posts.
 
 ## Deep Learning in a nutshell
-![](https://github.com/krishnacodes/krishnacodes.github.io/blob/master/assets/img/quotebengio.png?raw=true)
+![Deep Learning in a nutshell]({{site.baseurl}}/assets/img/quotebengio.png)
+
 
 ## Some awesome resources for enthusiasts
 
@@ -53,7 +54,7 @@ So deep learning is a very active area of research, i summarize all the recent p
 ## Some well known people in the area
 (follow everything they write from arXiv to twitter.) 
 
-[Andrej karpathy](http://cs.stanford.edu/people/karpathy/) &nbsp all
+[Andrej karpathy](http://cs.stanford.edu/people/karpathy/)
 
 [Geoffrey Hinton](http://www.cs.toronto.edu/~hinton/)
 
