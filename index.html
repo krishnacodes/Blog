@@ -3,9 +3,10 @@ layout: main
 ---
 
 
+
 {% assign cat_url  = "/depth_estimation/" %}
 {% assign cat_title = "Depth Estimation"%}
-{% assign cat_content = "We percieve world in 3D, machines do the same in pixel values, inorder bridge this Depth Estimation is formulated and is an active area of research. "%}
+{% assign cat_content = "We percieve world in 3D, machines do the same in pixel values, inorder to bridge this gap Depth Estimation is formulated and still  is an active area of research. "%}
 
 <article class="post">
   <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : "depth-image-black-and-white.jpg"}})" href="{{cat_url | prepend: site.baseurl}}"></a>
@@ -19,10 +20,100 @@ layout: main
 
 {% assign cat_url  = "/adversarial_training/" %}
 {% assign cat_title = "Adversarial Training"%}
-{% assign cat_content = "State-of-the-art neural networks show execllent generalization, some times even across domains, but are susceptible to structed adversarial perturbations let's review works on generating them. "%}
+{% assign cat_content = "State-of-the-art neural networks show execllent generalization, some times even across domains, but are susceptible to structed adversarial perturbations let's review works on them. "%}
 
 <article class="post">
   <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : "adversarial_training.png"}})" href="{{cat_url | prepend: site.baseurl}}"></a>
+  <div class="post-content">
+    <h2 class="post-title"><a href="{{cat_url | prepend: site.baseurl}}">{{cat_title}}</a></h2>
+    <p>{{ cat_content | strip_html | truncatewords: 30 }}</p>
+  </div>
+</article>
+
+{% assign cat_url  = "/domain_adaptation/" %}
+{% assign cat_title = "Domain Adaptation"%}
+{% assign cat_content = "Deep Neural Network show excellent performance when the train and test data distribution are close but fails to generalize across the domains unlike humans, let's review papers which address this. "%}
+
+<article class="post">
+  <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : "domain_adaptation.jpg"}})" href="{{cat_url | prepend: site.baseurl}}"></a>
+  <div class="post-content">
+    <h2 class="post-title"><a href="{{cat_url | prepend: site.baseurl}}">{{cat_title}}</a></h2>
+    <p>{{ cat_content | strip_html | truncatewords: 30 }}</p>
+  </div>
+</article>
+
+{% assign cat_url  = "/gan/" %}
+{% assign cat_title = "GAN"%}
+{% assign cat_content = " Generative Adversarial Networks contains one generator network which generates the data(either from random noise or some input) and a discriminator network which differentiates the predictions from the ground truth, let's review few GAN architectures. "%}
+
+<article class="post">
+  <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : "model.png"}})" href="{{cat_url | prepend: site.baseurl}}"></a>
+  <div class="post-content">
+    <h2 class="post-title"><a href="{{cat_url | prepend: site.baseurl}}">{{cat_title}}</a></h2>
+    <p>{{ cat_content | strip_html | truncatewords: 30 }}</p>
+  </div>
+</article>
+
+{% assign cat_url  = "/style_transfer/" %}
+{% assign cat_title = "Style Transfer"%}
+{% assign cat_content = " Imagine if Picaso or Da vinci is alive today and you can get yourself painted by them, well style transfer works can just do that, let's review some of them."%}
+
+<article class="post">
+  <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : "style_transfer.jpg"}})" href="{{cat_url | prepend: site.baseurl}}"></a>
+  <div class="post-content">
+    <h2 class="post-title"><a href="{{cat_url | prepend: site.baseurl}}">{{cat_title}}</a></h2>
+    <p>{{ cat_content | strip_html | truncatewords: 30 }}</p>
+  </div>
+</article>
+
+
+
+{% assign cat_url  = "/vos/" %}
+{% assign cat_title = "Video Object Segmentation"%}
+{% assign cat_content = " Segmenting a desired object from a scene is a basic computer vision task, but doing it on a video requires temporal consistancy, and can be done better using the information across the time frames, let's review works on how to do that."%}
+
+<article class="post">
+  <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : "boxing-fisheye.jpg"}})" href="{{cat_url | prepend: site.baseurl}}"></a>
+  <div class="post-content">
+    <h2 class="post-title"><a href="{{cat_url | prepend: site.baseurl}}">{{cat_title}}</a></h2>
+    <p>{{ cat_content | strip_html | truncatewords: 30 }}</p>
+  </div>
+</article>
+
+
+{% assign cat_url  = "/super_resolution/" %}
+{% assign cat_title = "Super Resolution"%}
+{% assign cat_content = " Have you ever wondered if you can increase your old photographs resolution with the new technology, let's review how to do that."%}
+
+<article class="post">
+  <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : "super_resolution.png"}})" href="{{cat_url | prepend: site.baseurl}}"></a>
+  <div class="post-content">
+    <h2 class="post-title"><a href="{{cat_url | prepend: site.baseurl}}">{{cat_title}}</a></h2>
+    <p>{{ cat_content | strip_html | truncatewords: 30 }}</p>
+  </div>
+</article>
+
+
+
+{% assign cat_url  = "/attention/" %}
+{% assign cat_title = "Attention"%}
+{% assign cat_content = "Humans have a very good algorithm to prune the vast amount of data that comes in to the required data essential for making decisions, let's review the works that emulate this using attention. "%}
+
+<article class="post">
+  <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : "article_2_1.7da3179d.png"}})" href="{{cat_url | prepend: site.baseurl}}"></a>
+  <div class="post-content">
+    <h2 class="post-title"><a href="{{cat_url | prepend: site.baseurl}}">{{cat_title}}</a></h2>
+    <p>{{ cat_content | strip_html | truncatewords: 30 }}</p>
+  </div>
+</article>
+
+
+{% assign cat_url  = "/sketch/" %}
+{% assign cat_title = "Sketch"%}
+{% assign cat_content = "Sketch images capture class information and the object information using very few strokes, humans very easily understand sketches unlike neural nets, let's review the works which make deep nets understand sketches. "%}
+
+<article class="post">
+  <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : "li2015sketch.jpg"}})" href="{{cat_url | prepend: site.baseurl}}"></a>
   <div class="post-content">
     <h2 class="post-title"><a href="{{cat_url | prepend: site.baseurl}}">{{cat_title}}</a></h2>
     <p>{{ cat_content | strip_html | truncatewords: 30 }}</p>
@@ -46,7 +137,3 @@ layout: main
     </article>
   {% endif %}  
 {% endfor %}
-
-
-{% include pagination.html %}
-

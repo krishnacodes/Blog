@@ -30,8 +30,6 @@ content_type: depth_estimaiton
 ![Network figure]({{site.baseurl}}/assets/img/)
 
 
-## Scope for improvement 
-
 
 ## Similar Works
 *

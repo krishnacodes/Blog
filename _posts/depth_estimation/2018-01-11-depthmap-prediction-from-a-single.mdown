@@ -1,0 +1,59 @@
+---
+layout: post-wo-sidebar
+title: Depth Map Prediction from a Single Image using a Multi-Scale Deep Network[NIPS 14]
+date: 2017-12-02 15:47:20 +0300
+description: 
+img: 1112.png
+tags: [NIPS, NIPS14, Depth Estimation]
+content_type: depth_estimaiton
+---
+
+
+
+## One Line Summary
+Depth estimation requiring integration of both global and local information from various cues, two deep network stacks are used to address this.
+
+## Motivation
+The Depth estimation task is inherently ambiguous, with a large source of uncertainty coming from the overall scale, so a two scale coarse and fine predictions are used.
+
+## Detailed Summary
+* A new method that addresses this task by employing two deep network stacks: one that makes a coarse global prediction based on the entire image, and another that refines this prediction locally.
+* A scale-invariant error to help measure depth relations rather than scale. By
+leveraging the raw datasets as large sources of training data, this method achieves state-of-the-art results on both NYU Depth and KITTI.
+
+## Novelty and Contributions
+* Using a two scale deep network by first making predictions at coarse level and then using this to make predictions at fine level
+* Showing the state-of-the-art results on NYU Depth and KITTI.
+
+
+
+## Network Details
+![Network figure]({{site.baseurl}}/assets/img/1112.png)
+* Blue bounding box showing the coarse level prediction network.
+* Orange bounding box showing the fine level prediciton network.
+
+
+
+## Results
+
+### Depth Estimation
+![Results]({{site.baseurl}}/assets/img/Screenshot from 2018-01-12 14-58-23.png)
+![Results]({{site.baseurl}}/assets/img/Screenshot from 2018-01-12 14-57-18.png)
+
+
+
+
+## Similar Works
+* [Depth Map Prediction from a Single Image using a Multi-Scale Deep Network]({{site.baseurl}}/predicting-depth-surface-normals-semantic-labels/)
+
+
+
+
+## Authours
+David Eigen, Christian Puhrsch, Rob Fergus
+
+## Sources
+[Paper](https://arxiv.org/abs/1406.2283)
+
+
+
