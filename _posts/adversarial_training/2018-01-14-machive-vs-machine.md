@@ -1,7 +1,7 @@
 ---
 layout: post-wo-sidebar
 title: Machine vs Machine :Minimax-Optimal Defense Against Adversarial Examples [NIPS-W 17]
-date: 2017-12-10 15:47:20 +0300
+date: 2018-01-10 15:47:20 +0300
 description: 
 img: fdsafdsafads.png
 content_type: adversarial_training
