@@ -10,7 +10,8 @@ site-twitter: #if your site has a twitter account, enter it here
 # Author Settings
 author: Phani Krishna # add your name
 author-img: Phani-Krishna-pic-small.png # add your photo
-about-author: I am a Deep Learning and Computer Vision Researcher. Our greatest glory is not in never falling, but in rising every time we fall - Confucius # add description
+about-author: I am a Deep Learning and Computer Vision Researcher. 
+quote: Our greatest glory is not in never falling, but in rising every time we fall - Confucius # add description
 twitter: phanikrishnau # add your Twitter handle
 facebook: phanikrishnau # add your Facebook handle
 github: krishnacodes # add your Github handle
