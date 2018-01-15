@@ -1,0 +1,43 @@
+---
+layout: post-wo-sidebar
+title: FusionSeg :Learning to combine motion and appearance for fully automatic segmentation of generic objects in videos
+date: 2017-12-16 15:47:20 +0300
+description: 
+img: dfsadfsfsf.png
+content_type: vos
+tags: [Video Object Segmentation]
+---
+
+
+## One Line Summary
+* End-to-end learning framework for segmenting generic objects in videos using the appearance and motion information.
+
+## Motivation
+* Motion and appearance information both provide the cues for video object segmentation, so fusion of both of the cues results in better predictions and more generalized results. 
+
+
+## Detailed Summary
+* Method learns to combine appearance and motion information to produce pixel level segmentation masks for all prominent objects.
+* A two-stream fully convolutional neural network which fuses together motion and appearance in a unified framework.
+
+## Novelty and Contributions
+* Two-stream fully convolutional deep segmentation network where individual streams encode generic appearance and motion cues derived from a video frame and its corresponding optical flow
+
+
+## Network Details
+![Network]({{site.baseurl}}/assets/img/dfsadfsfsf.png)
+
+* Fusion of the features from both apperance and motion giving the encoded representation that contain both the features.
+
+## Results
+![Results]({{site.baseurl}}/assets/img/sdasddsfdsaf.png)
+
+
+![Results]({{site.baseurl}}/assets/img/dfsfdsafds.png)
+
+## Authors
+Suyog Dutt Jain Bo Xiong Kristen Grauman
+
+## Sources
+[Paper](http://www.cs.utexas.edu/~grauman/papers/fusionseg-cvpr2017.pdf)
+[Code](http://vision.cs.utexas.edu/projects/fusionseg/)

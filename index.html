@@ -42,17 +42,6 @@ layout: main
   </div>
 </article>
 
-{% assign cat_url  = "/gan/" %}
-{% assign cat_title = "GAN"%}
-{% assign cat_content = " Generative Adversarial Networks contains one generator network which generates the data(either from random noise or some input) and a discriminator network which differentiates the predictions from the ground truth, let's review few GAN architectures. "%}
-
-<article class="post">
-  <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : "model.png"}})" href="{{cat_url | prepend: site.baseurl}}"></a>
-  <div class="post-content">
-    <h2 class="post-title"><a href="{{cat_url | prepend: site.baseurl}}">{{cat_title}}</a></h2>
-    <p>{{ cat_content | strip_html | truncatewords: 30 }}</p>
-  </div>
-</article>
 
 {% assign cat_url  = "/style_transfer/" %}
 {% assign cat_title = "Style Transfer"%}
@@ -93,6 +82,17 @@ layout: main
   </div>
 </article>
 
+{% assign cat_url  = "/gan/" %}
+{% assign cat_title = "GAN"%}
+{% assign cat_content = " Generative Adversarial Networks contains one generator network which generates the data(either from random noise or some input) and a discriminator network which differentiates the predictions from the ground truth, let's review few GAN architectures. "%}
+
+<article class="post">
+  <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : "model.png"}})" href="{{cat_url | prepend: site.baseurl}}"></a>
+  <div class="post-content">
+    <h2 class="post-title"><a href="{{cat_url | prepend: site.baseurl}}">{{cat_title}}</a></h2>
+    <p>{{ cat_content | strip_html | truncatewords: 30 }}</p>
+  </div>
+</article>
 
 
 {% assign cat_url  = "/attention/" %}

@@ -1,0 +1,43 @@
+---
+layout: post-wo-sidebar
+title: One-Shot Video Object Segmentation
+date: 2017-12-15 15:47:20 +0300
+description: 
+img: dafsdfsadfdsa.png
+content_type: vos
+tags: [Video Object Segmentation]
+---
+
+
+## One Line Summary
+* Semi supervised video object segmentation using the one shot approach, one of the state-of-the-art method on the davis dataset. 
+
+## Motivation
+* Most of the current literature on semi-supervised video object segmentation
+enforces temporal consistency in video sequences to propagate the initial mask into the following frames, there is a need for model with less computational complexity.
+
+
+## Detailed Summary
+* FCN model is initialized with the pretrained imagenet weights, and then trained for the task of vos, this step is referred to as intial offline training, which is followed by the online training and testing.
+
+## Novelty and Contributions
+* Does one shot learning, given a first frame image and the ground truth the predictions are estimated for the rest of the frames in the video 
+* Although all frames are processed independently, the results are temporally coherent and stable.
+
+## Network Details
+![Network]({{site.baseurl}}/assets/img/sdfsdfds.png)
+
+* Model is based on fully convolutional neural network architecture, 
+* Works in intial offline training followed by offline training and testing.
+
+## Results
+![Results]({{site.baseurl}}/assets/img/dsfdsfdsfds.png)
+
+
+![Results]({{site.baseurl}}/assets/img/dsfsdfsfsd.png)
+
+## Authors
+Sergi Caelles, Kevis-Kokitsi Maninis, Jordi Pont-Tuset, Laura Leal-Taixé, Daniel Cremers, Luc Van Gool
+## Sources
+[Paper](https://arxiv.org/abs/1611.05198)
+[Code](http://people.ee.ethz.ch/~cvlsegmentation/osvos/)

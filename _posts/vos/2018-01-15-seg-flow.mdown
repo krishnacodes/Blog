@@ -1,0 +1,45 @@
+---
+layout: post-wo-sidebar
+title: SegFlow :Joint Learning for Video Object Segmentation and Optical Flow[ICCV 17]
+date: 2017-12-16 15:47:20 +0300
+description: 
+img: dsdfdsafdsa.png
+content_type: vos
+tags: [Video Object Segmentation]
+---
+
+
+## One Line Summary
+* End-to-end trainable network, SegFlow, for simultaneously predicting pixel-wise object segmentation and optical flow in videos.
+
+## Motivation
+* Multi task networks have shown better results when the tasks are correlated, optical flow and the segmentation in vos are correlated and have some amount of complementary information that can be exploited for better predictions.
+
+
+## Detailed Summary
+* Optical flow branch is similar to the Flow Net model and takes advantage of the objectness information for the prediction of Optical flow in the videos.
+* segmentaion branch takes advantage of the temporal information in the optical flow branch for better predictions of segmentation in the videos  
+
+## Novelty and Contributions
+* cross talk between the decoders that predict the optical flow and the segmentation.
+* 
+
+
+## Network Details
+![Network]({{site.baseurl}}/assets/img/sfddsafdsa.png)
+
+* Network uses the bidirectional cross talk between the decoders of both tasks for the feature sharing 
+* loss formulaiton is adjusted for scenarios where the training data is available for one task and not for the other.
+
+## Results
+![Results]({{site.baseurl}}/assets/img/dsfsadfsfdsa.png)
+
+
+![Results]({{site.baseurl}}/assets/img/dfsadfdsafdsa.png)
+
+## Authors
+Jingchun Cheng, Yi-Hsuan Tsai, Shengjin Wang, Ming-Hsuan Yang
+
+## Sources
+[Paper](https://arxiv.org/abs/1709.06750)
+[Code](https://sites.google.com/site/yihsuantsai/research/iccv17-segflow)

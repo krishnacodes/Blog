@@ -1,0 +1,41 @@
+---
+layout: post-wo-sidebar
+title: :
+date: 2017-12-15 15:47:20 +0300
+description: 
+img: .png
+content_type: vos
+tags: [Video Object Segmentation]
+---
+
+
+## One Line Summary
+* 
+
+## Motivation
+* 
+
+
+## Detailed Summary
+* 
+
+## Novelty and Contributions
+* 
+
+
+## Network Details
+![Network]({{site.baseurl}}/assets/img/.png)
+
+* 
+
+## Results
+![Results]({{site.baseurl}}/assets/img/.png)
+
+
+![Results]({{site.baseurl}}/assets/img/.png)
+
+## Authors
+
+## Sources
+[Paper]()
+[Code]()

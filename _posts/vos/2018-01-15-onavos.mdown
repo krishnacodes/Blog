@@ -1,0 +1,46 @@
+---
+layout: post-wo-sidebar
+title: Online Adaptation of Convolutional Neural Networks for Video Object Segmentation [BMVC 17 Oral]
+date: 2017-12-14 15:47:20 +0300
+description: 
+img: dsfsfdsfdsf.png
+content_type: vos
+tags: [Video Object Segmentation, BMVC, BMVC 17]
+---
+
+
+## One Line Summary
+* Using online adaptation of video object segmentation uses the temporal consistancy as a cue and give better segmentation results 
+
+## Motivation
+* Single frame segmentation is different from the video object segmentation, since the foreground object being segmented can't change the position drastically from one frame to the next, this information can be exploited to get better results.  
+
+
+## Detailed Summary
+* This work is built on the previous video object segmentation osvos, they used the semi supervised approach, uses the online adaptation step after each frame prediction in the video, currently the state of the art on davis dataset for semi supervised video object segmentation.
+
+## Novelty and Contributions
+* Uses online adaptation for extracting the temporal consistancy cues.
+* Uses the negative samples for hard negative mining 
+* Mixes the ground truth of the initial frame for better results.
+## Network Details
+![Network]({{site.baseurl}}/assets/img/dsadfsd.png)
+
+* Network has the initial training step to get the overall objectness information, along with that after each frame the network is trained with the predictions of the previous frame to do the online adaptation.
+
+## Algorithm
+![Algo]({{site.baseurl}}/assets/img/sdfsafsdafdsa.png)
+
+
+## Results
+![Results]({{site.baseurl}}/assets/img/afdsfdsafsfdas.png)
+
+
+![Results]({{site.baseurl}}/assets/img/dsafdsafsad.png)
+
+## Authors
+Paul Voigtlaender, Bastian Leibe
+
+## Sources
+[Paper](https://arxiv.org/abs/1706.09364)
+[Code](https://www.vision.rwth-aachen.de/software/OnAVOS)

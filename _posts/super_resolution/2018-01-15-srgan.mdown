@@ -1,0 +1,45 @@
+---
+layout: post-wo-sidebar
+title: 
+date: 2017-12-15 15:47:20 +0300
+description: 
+img: fsafsfdsa.png
+content_type: super_resolution
+tags: [Super Resolution]
+---
+
+
+## One Line Summary
+* Generating high resolution images from the low resolution images using the generative adversarial networks.
+
+## Motivation
+* Generative adversarial networks have showm amazing image generative capabilities from the indoor scenes to the celebrity faces, super resolution can benefit from using the techniques from gans. 
+
+
+## Detailed Summary
+* High frequency details that can't be captured using the mean squared reconstruction error, used the GAN loss for do this and generated images with good perceptual quality containing the high frequency details. 
+
+## Novelty and Contributions
+* Recovers the finer texture details 
+* Contains the percetural clarity and the high frequency details 
+
+
+## Network Details
+![Network]({{site.baseurl}}/assets/img/fdfdsfdsafdsa.png)
+
+* 
+
+## Results
+![Results]({{site.baseurl}}/assets/img/fdsfasdfsf.png)
+![Results]({{site.baseurl}}/assets/img/fdsfasfsaf.png)
+
+![Results]({{site.baseurl}}/assets/img/dfsdfsdfdsad.png)
+
+## Authors
+Christian Ledig, Lucas Theis, Ferenc Huszar, Jose Caballero, Andrew Cunningham, Alejandro Acosta, Andrew Aitken, Alykhan Tejani, Johannes Totz, Zehan Wang, Wenzhe Shi
+
+## Sources
+[Paper](https://arxiv.org/abs/1609.04802)
+
+[Code](https://github.com/buriburisuri/SRGAN)
+
