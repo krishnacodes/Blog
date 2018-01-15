@@ -1,0 +1,44 @@
+---
+layout: post-wo-sidebar
+title: Adversarial Discriminative Domain Adaptation [CVPR 17]
+date: 2017-12-12 15:47:20 +0300
+description: 
+img: dsfsfdsfdsf.png
+content_type: domain_adaptation
+tags: [Domain Adaptation, CVPR, CVPR 17]
+---
+
+
+## One Line Summary
+* Using the Adversarial learning methods for domain adaptation.
+
+## Motivation
+* Previous domain adaptation methods have either used generative approaches that shows compelling visualizations, but not optimal for discriminative tasks, and are limited to smaller shifts or discriminative approaches that imposed the tied weights on the model and did not exploit a GAN loss
+
+
+## Detailed Summary
+* The Network has the classification loss on the source domain for good classification accuracy
+* There is a CORAL loss for making the network extract the domain independent features and generalize well across domains.
+
+## Novelty and Contributions
+* A previously unexplored instance of our general framework which combines discriminative modeling, untied weight sharing, and a GAN loss, Adversarial Discriminative Domain Adaptation.
+
+* Use of GAN loss for unsupervised domain adaptation.
+
+
+## Network Details
+![Network]({{site.baseurl}}/assets/img/adfdsfsdfasd.png)
+
+* The Network the shared weights across the two domains, as we are trying to capture the domain independent representation. 
+
+## Results
+![Results]({{site.baseurl}}/assets/img/sdsfsdfdsfsdfs.png)
+
+
+![Results]({{site.baseurl}}/assets/img/SADFADSFDSF.png)
+
+## Authors
+Eric Tzeng, Judy Hoffman, Kate Saenko, Trevor Darrell
+
+## Sources
+[Paper](https://arxiv.org/abs/1702.05464)

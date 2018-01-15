@@ -1,0 +1,42 @@
+---
+layout: post-wo-sidebar
+title: CyCADA :Cycle-Consistent Adversarial Domain Adaptation
+date: 2017-12-13 15:47:20 +0300
+description: 
+img: aasasasafdsf.png
+content_type: domain_adaptation
+tags: [Domain Adaptation]
+---
+
+
+## One Line Summary
+* Using the Adversarial learning methods for domain adaptation using cycle reconstruction at the image or feature level.
+
+## Motivation
+* Few works have explicitly studied visual domain adaptation for the semantic segmentation task.
+
+## Detailed Summary
+* Network the cyclic loss for the source image reconsturction
+* It also has a semantic consistency loss 
+* GAN is also present to improve the results.
+
+## Novelty and Contributions
+* Discriminatively-trained Cycle-Consistent Adversarial Domain Adaptation model
+* Applied in a variety of visual recognition and prediction settings
+
+## Network Details
+![Network]({{site.baseurl}}/assets/img/aasasasafdsf.png)
+
+* The Network has a cyclic reconstruction for the content of the input to be remained which doing the domain adaptation.
+
+## Results
+![Results]({{site.baseurl}}/assets/img/dsfsadfadfdsa.png)
+
+
+![Results]({{site.baseurl}}/assets/img/fasfdsfsdsd.png)
+
+## Authors
+Judy Hoffman, Eric Tzeng, Taesung Park, Jun-Yan Zhu, Phillip Isola, Kate Saenko, Alexei A. Efros, Trevor Darrell
+
+## Sources
+[Paper](https://arxiv.org/abs/1711.03213)
