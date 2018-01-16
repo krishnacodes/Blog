@@ -1,6 +1,6 @@
 ---
 layout: post-wo-sidebar
-title: MoCoGAN :Decomposing Motion and Content for Video Generation
+title: :
 date: 2017-12-15 15:47:20 +0300
 description: 
 img: .png
