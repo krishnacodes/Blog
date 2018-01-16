@@ -1,0 +1,42 @@
+---
+layout: post-wo-sidebar
+title: Depth-aware Neural Style Transfer
+date: 2017-12-18 15:47:20 +0300
+description: 
+img: dsfdasfdsadas.jpg
+content_type: style_transfer
+tags: [Style Transfer]
+---
+
+
+## One Line Summary
+* Preserves the depth information in the stylized image using the depth aware loss, to retain the perspective of the original image in the stylized image.  
+
+## Motivation
+* Neural style transfer has recently received significant attention and demonstrated amazing results, but during the style transfer the 3d perspective of the image is lost and the stylized image looks plain and washed out, this can be addressed enforcing the preservation of depth.  
+
+
+## Detailed Summary
+* The depth map effectively reflects the spatial distribution in an image and preserving the depth map of the content image after stylization helps produce an image that preserves its semantic content, this paper introduces a novel approach for neural style transfer that integrates depth preservation as additional loss, preserving overall image layout while performing style transfer.
+
+## Novelty and Contributions
+* Depth Loss is formulated as the difference in the features of the depth network the original image and the stylized image 
+
+
+## Network Details
+![Network]({{site.baseurl}}/assets/img/dsfsafsadfs.jpg)
+
+* loss network pre-trained for object recognition to define style and content loss, and an additional depth estimation network to define depth loss.
+
+## Results
+![Results]({{site.baseurl}}/assets/img/dsfsdafasfds.png)
+
+![Results]({{site.baseurl}}/assets/img/asdfasfsfdsa.png)
+
+## Authors
+Xiao-Chang Liu, Ming-Ming Cheng, Yu-Kun Lai, Paul L. Rosin
+
+## Sources
+[Paper](https://dl.acm.org/citation.cfm?id=3092924)
+
+[Code](https://github.com/xiumingzhang/depth-preserving-neural-style-transfer)

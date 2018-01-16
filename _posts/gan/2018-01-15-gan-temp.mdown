@@ -1,0 +1,44 @@
+---
+layout: post-wo-sidebar
+title: MoCoGAN :Decomposing Motion and Content for Video Generation
+date: 2017-12-15 15:47:20 +0300
+description: 
+img: .png
+content_type: gan
+tags: [GAN]
+---
+
+
+## One Line Summary
+* 
+
+## Motivation
+* 
+
+
+## Detailed Summary
+* 
+
+## Novelty and Contributions
+* Representing the motion as a path in the latent space rather than as a point, so that the videos of different length can be represented.
+
+
+## Network Details
+![Network]({{site.baseurl}}/assets/img/sdafsfsaddfa.png)
+
+* LSTM based generative model that uses the encoded motion and the content information for the video generation
+![Network]({{site.baseurl}}/assets/img/fdsfafafads.png)
+
+## Results
+![Results]({{site.baseurl}}/assets/img/fdsfsdfsa.png)
+
+
+![Results]({{site.baseurl}}/assets/img/fdsfsdfsdfds.png)
+
+## Authors
+Sergey Tulyakov, Ming-Yu Liu, Xiaodong Yang, Jan Kautz
+
+## Sources
+[Paper](https://arxiv.org/abs/1707.04993)
+
+[Code](https://github.com/sergeytulyakov/mocogan)

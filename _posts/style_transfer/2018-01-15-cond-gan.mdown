@@ -1,0 +1,44 @@
+---
+layout: post-wo-sidebar
+title: Image-to-Image Translation with Conditional Adversarial Networks
+date: 2017-12-17 15:47:20 +0300
+description: 
+img: adfsafsaf.png
+content_type: style_transfer
+tags: [Style Transfer]
+---
+
+
+## One Line Summary
+* Image to Image translation where the loss formulation is difficult 
+
+## Motivation
+* Image to Image translation tasks the loss formulation is not straight forward, but as a community, we no longer hand-engineer our mapping functions,
+and this work suggests we can achieve reasonable results without hand-engineering our loss functions either.
+
+
+## Detailed Summary
+* Conditional adversarial networks are a promising approach for many image to-image translation tasks.
+* These networks learn a loss adapted to the task and data at hand, which makes them applicable in a wide variety of settings.
+
+## Novelty and Contributions
+* Using the deep conditional adversarial network the task of image to image translation.
+* No explicit loss formulation.
+
+
+## Network Details
+![Network]({{site.baseurl}}/assets/img/dfsafsdfads.png)
+* Uses the encoder decoder architecture, for translating the image from the source domain to the target domain.
+* A variant of the original architecture uses the skip connections on the encoder-decoder architecture(U -Net) 
+
+## Results
+![Results]({{site.baseurl}}/assets/img/dsadsadsa.png)
+
+![Results]({{site.baseurl}}/assets/img/fdsadsafasdfds.png)
+
+## Authors
+Phillip Isola, Jun-Yan Zhu, Tinghui Zhou, Alexei A. Efros
+
+## Sources
+[Paper](https://arxiv.org/abs/1611.07004)
+[Code](https://phillipi.github.io/pix2pix/)

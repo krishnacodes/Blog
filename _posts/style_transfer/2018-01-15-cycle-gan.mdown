@@ -1,41 +1,47 @@
 ---
 layout: post-wo-sidebar
-title: :
-date: 2017-12-15 15:47:20 +0300
-description: 
-img: .png
+title: 
+date: 2017-12-16 15:47:20 +0300
+description: Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks [ICCV 17]
+img: teaser_high_res.jpg
 content_type: style_transfer
-tags: [Style Transfer]
+tags: [Style Transfer, ICCV, ICCV 17]
 ---
 
 
 ## One Line Summary
-* 
+* Image to image translation from the source domain to the target domain when the paried data is not available for the target domain.
 
 ## Motivation
-* 
+* In the real world scenario the paired data is hard to collect for image translation tasks, but the unpaired data is relatively easy to collect, so it makes sense to design networks that work with unpaired data.
 
 
 ## Detailed Summary
+* A method that can learn to capture special characteristics of one image collection and figuring out how these characteristics could be
+translated into the other image collection, all in the absence of any paired training examples.
 * 
 
+
 ## Novelty and Contributions
-* 
+* Cycle consistancy loss
+* Two way image translation
 
 
 ## Network Details
-![Network]({{site.baseurl}}/assets/img/.png)
-
-* 
+![Network]({{site.baseurl}}/assets/img/afasfsdafds.png)
+* There is an adversarial loss that matches the data distributions.
+* For the Content retainment and prevent mode collapse the cyclic consistency loss is used.
 
 ## Results
-![Results]({{site.baseurl}}/assets/img/.png)
+![Results]({{site.baseurl}}/assets/img/asfsddsfds.png)
 
 
-![Results]({{site.baseurl}}/assets/img/.png)
+![Results]({{site.baseurl}}/assets/img/dsadsadas.png)
 
 ## Authors
+Jun-Yan Zhu, Taesung Park, Phillip Isola, Alexei A. Efros
 
 ## Sources
-[Paper]()
-[Code]()
+[Paper](https://arxiv.org/abs/1703.10593)
+
+[Code](https://junyanz.github.io/CycleGAN/)
