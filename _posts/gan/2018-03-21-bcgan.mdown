@@ -171,6 +171,8 @@ class Encoder(object):
 		.
 
 ```
+
+![Network]({{site.baseurl}}/assets/img/paper-figure.png)
 ################################################################################################################
 
 
@@ -292,7 +294,7 @@ if __name__ == "__main__":
 
 
 * LSTM based generative model that uses the encoded motion and the content information for the video generation
-![Network]({{site.baseurl}}/assets/img/fdsfafafads.png)
+
 
 ## Results
 ![Results]({{site.baseurl}}/assets/img/fdsfsdfsa.png)
