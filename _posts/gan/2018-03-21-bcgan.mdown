@@ -19,6 +19,7 @@ tags: [GAN, Video Generation]
 4. layers.py
 5. test.py
 6. train.py
+
 ![Network]({{site.baseurl}}/assets/img/adfasdfads.gif)
 ## Libraries
 ```
