@@ -211,7 +211,7 @@ def residual(input, is_train, norm=None):
 ### function: validate_args
 * validates the collected arguments are allowable values
 
-## function: train
+### function: train
 
 1. sets up the GPU environment and variables
 2. loads the training data
@@ -287,20 +287,21 @@ if __name__ == "__main__":
 ################################################################################################################
 
 
+## Usage 
+* Training - default [edges2shoes, size=256] 
+```
+python train.py --dataset edges2shoes --batch_size 1 --img_size 256 --gpu 0
+```
+* Testing
+```
+python test.py --pretrained_weights 'weights/location/go/here'
+```
+* Tensorboard 
+```
+tensorboard --logdir=./logs
+```
+* in browser - localhost:6006/
 
-
-
-## Network Details
-
-
-* LSTM based generative model that uses the encoded motion and the content information for the video generation
-
-
-## Results
-![Results]({{site.baseurl}}/assets/img/fdsfsdfsa.png)
-
-
-![Results]({{site.baseurl}}/assets/img/fdsfsdfsdfds.png)
 
 ## Authors
 Jun-Yan Zhu, Richard Zhang, Deepak Pathak, Trevor Darrell, Alexei A. Efros, Oliver Wang, Eli Shechtman
