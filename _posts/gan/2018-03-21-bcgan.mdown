@@ -173,7 +173,6 @@ class Encoder(object):
 
 ```
 
-![Network]({{site.baseurl}}/assets/img/paper-figure.png)
 ################################################################################################################
 
 
@@ -291,7 +290,7 @@ if __name__ == "__main__":
 ## Usage 
 * Training - default [edges2shoes, size=256] 
 ```
-python train.py --dataset edges2shoes --batch_size 1 --img_size 256 --gpu 0
+python train.py --dataset edges2shoes --batch_size 1 --img_size 256 --gpu 1
 ```
 * Testing
 ```
