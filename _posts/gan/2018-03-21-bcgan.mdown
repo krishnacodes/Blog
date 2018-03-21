@@ -28,6 +28,9 @@ Code is written in python using tensorflow library.
 
 Other dependencies
 numpy, scipy, os, argparse, tqdm, h5py, time, random.
+################################################################################################################
+
+
 
 
 ## process_data.py [Data preprocessing]
@@ -49,6 +52,9 @@ def get_data(image_size=256, dataset='edges2shoes' , is_train=True, debug= False
 ```
 
 ################################################################################################################
+
+
+
 
 ## bcgan.py [BC-GAN Model definitions]
 
