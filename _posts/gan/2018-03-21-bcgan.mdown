@@ -19,7 +19,7 @@ tags: [GAN, Video Generation]
 4. layers.py
 5. test.py
 6. train.py
-
+![Network]({{site.baseurl}}/assets/img/adfasdfads.gif)
 ## Libraries
 ```
 import tensorflow as tf
@@ -95,6 +95,28 @@ module is a class definition - for bicyclic gan
 2. generates the images by random sampling 
 3. saves the images 
 
+```
+class Bicycle_GAN(object):
+	def __init__(self, ...):
+		.
+		.
+		return xxx
+	def summary_create(self):
+		.
+		.
+
+	def train(self, sess, data, saver, summary_writer):
+		.
+		.
+
+	def test(self, sess, data, write_dir):
+		.
+		.
+
+
+```
+################################################################################################################
+
 
 
 
@@ -122,12 +144,59 @@ from layers import * ( wrapper functions for all the layers)
 * for creating the encoder graph definition, uses the residual skip connections along with other layers.
 * returns the final layer output 
 
+```
+class Generator(object):
+	def __init__():
+		.
+		.
+	def__call__():
+		.
+		.
+
+class Discriminator(object):
+	def __init__():
+		.
+		.
+	def__call__():
+		.
+		.
+
+class Encoder(object):
+	def __init__():
+		.
+		.
+	def__call__():
+		.
+		.
+
+```
+################################################################################################################
+
 
 
 ## layers.py [Wrappers for tf.layers]
 * modules - conv2d, flatten, residual etc …
 
 wrapper functions on top of the tensorflow implementations of the defined layers.
+```
+def normalization(input, is_train, norm=None):
+	.
+	.
+	return output
+
+def conv2d(input, is_train, norm=None):
+	.
+	.
+	return output
+
+def residual(input, is_train, norm=None):
+	.
+	.
+	return output
+
+```
+################################################################################################################
+
 
 ## train.py
 * modules - collect_args, validate_args, train
@@ -147,6 +216,31 @@ wrapper functions on top of the tensorflow implementations of the defined layers
 4. load the pretrained weights if exists
 5. call the training function in Bicycle_GAN
 
+```
+def validate_args(args):
+	"""Validating the arguments"""
+	.
+	.
+
+def collect_args():
+	"""Collecting the arguments"""
+	.
+	.
+
+def train(args):
+	"""Training the Model"""
+
+
+if __name__ == "__main__":
+	args = collect_args()
+	print 'Colleted the Argumets'
+	validate_args(args)
+	train(args)
+
+```
+################################################################################################################
+
+
 
 ## test.py
 * modules - collect_args, validate_args, train
@@ -165,12 +259,36 @@ wrapper functions on top of the tensorflow implementations of the defined layers
 4. load the pretrained weights
 5. call the test function in BiCycle_GAN
 
+```
+def validate_args(args):
+	"""Validating the arguments"""
+	.
+	.
+
+def collect_args():
+	"""Collecting the arguments"""
+	.
+	.
+
+def test(args):
+	"""Training the Model"""
+
+
+if __name__ == "__main__":
+	args = collect_args()
+	print 'Colleted the Argumets'
+	validate_args(args)
+	test(args)
+
+```
+################################################################################################################
+
 
 
 
 
 ## Network Details
-![Network]({{site.baseurl}}/assets/img/adfasdfads.gif)
+
 
 * LSTM based generative model that uses the encoded motion and the content information for the video generation
 ![Network]({{site.baseurl}}/assets/img/fdsfafafads.png)
