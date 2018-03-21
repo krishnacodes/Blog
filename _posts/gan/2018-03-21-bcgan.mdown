@@ -30,9 +30,8 @@ Other dependencies
 numpy, scipy, os, argparse, tqdm, h5py, time, random.
 
 
-## Data preprocessing
+## filename - process_data.py [Data preprocessing]
 
-* filename - process_data.py
 * modules - get_data
 
 1. downloaded data is loaded using this module
@@ -41,12 +40,12 @@ numpy, scipy, os, argparse, tqdm, h5py, time, random.
 
 
 
-## Model definitions
+## filename : bcgan.py [BC-GAN Model definitions]
 
-* filename : bcgan.py
-
-* dependencies - from network import generator, discriminator, encoder
-
+* dependencies 
+```
+from network import generator, discriminator, encoder
+```
 * module : Bicycle_GAN
 
 module is a class definition - for bicyclic gan
@@ -59,24 +58,22 @@ module is a class definition - for bicyclic gan
 
 #### function: constructor
 1. creates all the necessary variable in the class object.
-2. uses the modules generator, discriminator and encoder to create 
-cVAE-GAN
-cLR-GAN
+2. uses the modules generator, discriminator and encoder to create cVAE-GAN and cLR-GAN
 3. formulates the loss functions
 4. optimizers
 5. update ops(taking care of batchnorm updates)
 
-function: summary_create
+#### function: summary_create
 1. create the tensorboard summaries for all costs, and images
 2. merging all summaries 
 
-function: train
+#### function: train
 1. runs the main training loop
 2. loss minimization and gradient updates 
 3. learning rate is periodically decayed 
 4. summaries are periodically written
 
-function: test
+#### function: test
 1. loads the pretrained weights
 2. generates the images by random sampling 
 3. saves the images 
@@ -84,54 +81,56 @@ function: test
 
 
 
-filename network.py
-modules - generator, discriminator, encoder
-dependencies - from layers import * ( wrapper functions for all the layers)
+## filename network.py [GEN, DISC, ENC Model definitions]
+* modules - generator, discriminator, encoder
+* dependencies 
+```
+from layers import * ( wrapper functions for all the layers)
+```
 
-module - generator
+### module - generator
 
-for creating the generator graph definition, with all the conv layers, normalizations, and activations.
-returns the final layer output 
+* for creating the generator graph definition, with all the conv layers, normalizations, and activations.
+* returns the final layer output 
 
-functions 
-__init__
-__call__
+#### functions 
+1. __init__
+2. __call__
 
-module - generator
+### module - discriminator
 
-for creating the discriminator graph definition, uses the deconv layers in addition to other layers to increase the spatial size.
-returns the final layer output 
+* for creating the discriminator graph definition, uses the deconv layers in addition to other layers to increase the spatial size.
+* returns the final layer output 
 
-functions 
-__init__
-__call__
+#### functions 
+1. __init__
+2. __call__
 
-module - encoder
+### module - encoder
 
-for creating the encoder graph definition, uses the residual skip connections along with other layers.
+* for creating the encoder graph definition, uses the residual skip connections along with other layers.
+* returns the final layer output 
 
-returns the final layer output 
+#### functions 
+1. __init__
+2. __call__
 
-functions 
-__init__
-__call__
-
-filename layers.py
-modules - conv2d, flatten, residual etc …
+## filename layers.py [Wrappers for tf.layers]
+* modules - conv2d, flatten, residual etc …
 
 wrapper functions on top of the tensorflow implementations of the defined layers.
 
-filename train.py
-modules - collect_args, validate_args, train
-dependencies - Bicycle_GAN, get_data
+## filename train.py
+* modules - collect_args, validate_args, train
+* dependencies - Bicycle_GAN, get_data
 
-function: collect_args
-collect the model parameters and training parameters using the argparse 
+### function: collect_args
+* collect the model parameters and training parameters using the argparse 
 
-function: validate_args
-validates the collected arguments are allowable values
+### function: validate_args
+* validates the collected arguments are allowable values
 
-function: train
+## function: train
 
 1. sets up the GPU environment and variables
 2. loads the training data
@@ -140,17 +139,17 @@ function: train
 5. call the training function in Bicycle_GAN
 
 
-filename test.py
-modules - collect_args, validate_args, train
-dependencies - Bicycle_GAN, get_data
+## filename test.py
+* modules - collect_args, validate_args, train
+* dependencies - Bicycle_GAN, get_data
 
-function: collect_args
-collect the model parameters and training parameters using the argparse 
+### function: collect_args
+* collect the model parameters and training parameters using the argparse 
 
-function: validate_args
-validates the collected arguments are allowable values
+### function: validate_args
+* validates the collected arguments are allowable values
 
-function: test
+### function: test
 1. sets up the GPU environment and variables
 2. loads the testing data
 3. creates the BiCycle GAN model definition
