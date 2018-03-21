@@ -30,7 +30,7 @@ Other dependencies
 numpy, scipy, os, argparse, tqdm, h5py, time, random.
 
 
-## filename - process_data.py [Data preprocessing]
+## process_data.py [Data preprocessing]
 
 * modules - get_data
 
@@ -40,7 +40,7 @@ numpy, scipy, os, argparse, tqdm, h5py, time, random.
 
 
 
-## filename : bcgan.py [BC-GAN Model definitions]
+## bcgan.py [BC-GAN Model definitions]
 
 * dependencies 
 ```
@@ -81,7 +81,7 @@ module is a class definition - for bicyclic gan
 
 
 
-## filename network.py [GEN, DISC, ENC Model definitions]
+## network.py [GEN, DISC, ENC Model definitions]
 * modules - generator, discriminator, encoder
 * dependencies 
 ```
@@ -115,12 +115,12 @@ from layers import * ( wrapper functions for all the layers)
 1. __init__
 2. __call__
 
-## filename layers.py [Wrappers for tf.layers]
+## layers.py [Wrappers for tf.layers]
 * modules - conv2d, flatten, residual etc …
 
 wrapper functions on top of the tensorflow implementations of the defined layers.
 
-## filename train.py
+## train.py
 * modules - collect_args, validate_args, train
 * dependencies - Bicycle_GAN, get_data
 
@@ -139,7 +139,7 @@ wrapper functions on top of the tensorflow implementations of the defined layers
 5. call the training function in Bicycle_GAN
 
 
-## filename test.py
+## test.py
 * modules - collect_args, validate_args, train
 * dependencies - Bicycle_GAN, get_data
 
