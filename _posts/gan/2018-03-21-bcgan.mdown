@@ -51,7 +51,7 @@ def get_data(image_size=256, dataset='edges2shoes' , is_train=True, debug= False
 		.
 	return return_data
 ```
-
+![Network]({{site.baseurl}}/assets/img/screenshot.png)
 ################################################################################################################
 
 
@@ -116,6 +116,7 @@ class Bicycle_GAN(object):
 
 
 ```
+![Network]({{site.baseurl}}/assets/img/paper-figure.png)
 ################################################################################################################
 
 
