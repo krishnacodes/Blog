@@ -37,8 +37,18 @@ numpy, scipy, os, argparse, tqdm, h5py, time, random.
 1. downloaded data is loaded using this module
 2. augmentation is done on the fly - not part of this step.
 
+```
+def get_data(image_size=256, dataset='edges2shoes' , is_train=True, debug= False):
+	'''function to get the training and validation data, dataset given as string,
+		image size in int format, is_train in bool format for the train/valid data.'''
+		.
+		.
+		.
+		.
+	return return_data
+```
 
-
+#######################################################################################
 
 ## bcgan.py [BC-GAN Model definitions]
 
@@ -153,6 +163,10 @@ wrapper functions on top of the tensorflow implementations of the defined layers
 
 
 
+## Network Details
+![Network]({{site.baseurl}}/assets/img/adfasdfads.gif)
+
+* LSTM based generative model that uses the encoded motion and the content information for the video generation
 ![Network]({{site.baseurl}}/assets/img/fdsfafafads.png)
 
 ## Results
