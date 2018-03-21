@@ -34,7 +34,7 @@ numpy, scipy, os, argparse, tqdm, h5py, time, random.
 
 
 
-## 1.1 process_data.py [Data preprocessing]
+## process_data.py [Data preprocessing]
 
 * modules : get_data
 
