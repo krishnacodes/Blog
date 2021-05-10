@@ -5,7 +5,7 @@ date: 2020-05-10 15:47:20 +0300
 description: 
 img: ddsfdsdsafdsa.png
 tags: VLR
-content_type: Retrieval, action recognition, multi modal
+content_type: depth_estimaiton
 ---
 
 
