@@ -13,7 +13,7 @@ content_type: depth_estimaiton
 ## Summary
 * Content Based Video Retrieval [egs: YouTube] is desirable because searches that rely purely on metadata are dependent on annotation quality and completeness. The presented architecture provides an efficient way of Text based Video Retrieval. 
 
-Also, our work is an extension of CLIP Model Action Recognition 
+* Also, our work is an extension of CLIP Model Action Recognition 
 [RN50x16], where they have used Mid-frame level approach to get an accuracy of 53.4%, while our method gives an improvement of 83.9% [LSTM] and 85.5% [Transformer] comparing to the SOTA on Kinetics 400 dataset 84.8%.
 
 
@@ -27,26 +27,19 @@ Also, our work is an extension of CLIP Model Action Recognition
 * Using Open Set Recognition. 
 
 ## Prior Work
-
-
 * Open Set Recognition with Conditional Probabilistic Generative Models [1] proposes an approach to reject the unknown samples for a model encountered in the real world data in open set conditions.
 * Unified Probabilistic Deep Continual Learning through Generative Replay and Open Set Recognition [2] also introduces a probabilistic approach to unify Open Set recognition by avoiding samples which are outside the known data classes
 * We aim to perform a kind of Open set recognition but without rejecting or avoiding input samples.
-To explore this approach more in the open set conditions, we perform our experiments for Video Retrieval from textual input using CLIP Model.
+* To explore this approach more in the open set conditions, we perform our experiments for Video Retrieval from textual input using CLIP Model.
 
-## Detailed Summary
-* Multi-task learning aims to improve learning efficiency, generalization and prediction accuracy by learning multiple objectives from a shared representation
-* Prior multi-task learning tasks use a naive weighted sum of losses, but the performance is highly sensitive to the weights given to the losses 
-* This approach uses the learns the weights to the losses for the optimal predictions and efficiency across the tasks.
-
-## Novelty and Contributions
+## Approach
 * A novel and principled multi-task loss to simultaneously learn various classification and
 regression losses of varying quantities and units using homoscedastic task uncertainty,
 * A unified architecture for semantic segmentation, instance segmentation and depth regression,
 * Demonstrating the importance of loss weighting in multi-task deep learning and how to
 obtain superior performance compared to equivalent separately trained models.
 
-## Network Details
+## Network Architecture
 ![Network figure]({{site.baseurl}}/assets/img/ddsfdsdsafdsa.png)
 * Network uses the same encoder for all three tasks .
 * Decoder part is separate for each task
@@ -56,14 +49,13 @@ obtain superior performance compared to equivalent separately trained models.
 
 ## Results
 ![Results]({{site.baseurl}}/assets/img/gvsgadsdf.png)
-
-
 ![Results]({{site.baseurl}}/assets/img/dsfdsfsdfsd.png)
 
+
 ## Authors
-Alex Kendall, Yarin Gal, Roberto Cipolla
+Krishna Uppala, Shriti Priya, Vaidehi Joshi
 
 ## Sources
-[Paper](https://arxiv.org/abs/1705.07115)
+[Paper](https://arxiv.org/)
 
-[Code](https://github.com/yaringal/multi-task-learning-example/blob/master/multi-task-learning-example.ipynb)
+[Code](https://github.com/feedforward/Vid_CLIP)
