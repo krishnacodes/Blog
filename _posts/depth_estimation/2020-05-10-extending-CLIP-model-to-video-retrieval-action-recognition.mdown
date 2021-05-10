@@ -1,0 +1,53 @@
+---
+layout: post-wo-sidebar
+title: Multi-Task Learning Using Uncertainty to Weigh Losses for Scene Geometry and Semantics[arXiv May 17]
+date: 2017-12-05 15:47:20 +0300
+description: 
+img: ddsfdsdsafdsa.png
+tags: [CVPR, CVPR17, Depth Estimation]
+content_type: depth_estimaiton
+---
+
+
+
+## One Line Summary
+* Deep learning applications benefit from multi-task learning with multiple regression and classification objectives, a principled approach to multi-task deep learning which weighs multiple loss functions is presented.
+
+## Motivation
+* Performance of multi-task system is strongly dependent on the relative weighting
+between each task’s loss, tuning these weights by hand is a difficult and expensive
+process, making multi-task learning prohibitive in practice.
+
+## Detailed Summary
+* Multi-task learning aims to improve learning efficiency, generalization and prediction accuracy by learning multiple objectives from a shared representation
+* Prior multi-task learning tasks use a naive weighted sum of losses, but the performance is highly sensitive to the weights given to the losses 
+* This approach uses the learns the weights to the losses for the optimal predictions and efficiency across the tasks.
+
+## Novelty and Contributions
+* A novel and principled multi-task loss to simultaneously learn various classification and
+regression losses of varying quantities and units using homoscedastic task uncertainty,
+* A unified architecture for semantic segmentation, instance segmentation and depth regression,
+* Demonstrating the importance of loss weighting in multi-task deep learning and how to
+obtain superior performance compared to equivalent separately trained models.
+
+## Network Details
+![Network figure]({{site.baseurl}}/assets/img/ddsfdsdsafdsa.png)
+* Network uses the same encoder for all three tasks .
+* Decoder part is separate for each task
+
+
+
+
+## Results
+![Results]({{site.baseurl}}/assets/img/gvsgadsdf.png)
+
+
+![Results]({{site.baseurl}}/assets/img/dsfdsfsdfsd.png)
+
+## Authors
+Alex Kendall, Yarin Gal, Roberto Cipolla
+
+## Sources
+[Paper](https://arxiv.org/abs/1705.07115)
+
+[Code](https://github.com/yaringal/multi-task-learning-example/blob/master/multi-task-learning-example.ipynb)
