@@ -3,57 +3,122 @@ layout: post-wo-sidebar
 title: Extending CLIP model to Video Retrieval and Action Recognition
 date: 2020-05-10 15:47:20 +0300
 description: 
-img: ddsfdsdsafdsa.png
+img: afsfsdfdsasdfas1.png
 tags: VLR
 content_type: depth_estimaiton
 ---
 
 
+<center> Krishna Uppala, Shriti Priya, Vaidehi Joshi</center>
 
-## Summary
+## Abstract
+
+
+
+## Introduction
 * Content Based Video Retrieval [egs: YouTube] is desirable because searches that rely purely on metadata are dependent on annotation quality and completeness. The presented architecture provides an efficient way of Text based Video Retrieval. 
-
 * Also, our work is an extension of CLIP Model Action Recognition 
 [RN50x16], where they have used Mid-frame level approach to get an accuracy of 53.4%, while our method gives an improvement of 83.9% [LSTM] and 85.5% [Transformer] comparing to the SOTA on Kinetics 400 dataset 84.8%.
 
 
 ## Motivation
 * Restricted form of supervision in SOTA computer vision methods (trained on a fixed set of categories), limits their generality and usability for other visual concepts.
-
 * In such a scenario, to learn the new visual concepts, there should be some form of more context for the model to infer from.
-
 * Using  zero-shot transfer, natural language supervision, and multimodal learning provides this extra information useful to learn new visual concepts.
-
 * Using Open Set Recognition. 
 
-## Prior Work
+## Related Works
+
+
+### Open set
 * Open Set Recognition with Conditional Probabilistic Generative Models [1] proposes an approach to reject the unknown samples for a model encountered in the real world data in open set conditions.
 * Unified Probabilistic Deep Continual Learning through Generative Replay and Open Set Recognition [2] also introduces a probabilistic approach to unify Open Set recognition by avoiding samples which are outside the known data classes
 * We aim to perform a kind of Open set recognition but without rejecting or avoiding input samples.
 * To explore this approach more in the open set conditions, we perform our experiments for Video Retrieval from textual input using CLIP Model.
 
+### Image retrieval
+The neural network will be trained on text and visual embedding pairs to make it learn a mapping between text and corresponding images. Based on a supervised learning approach, labels, Image and text embedding will be used to match the unseen text data examples to a corresponding image. Likewise, we will achieve Image retrieval. 
+
+### Video based retrieval 
+
+Action recognition is one of the actively researched areas in computer vision. This has led to collection of large sized datasets like kinetics, something-something , AVA etc. Most of the work is focused on classifying the actions given temporal and spatial localized clips as an  input. A different stream of research that works on non localized input is also being explored. This works by first generating proposals from the input videos and later classifying the proposals. Our work focuses on a different way of exploring video understanding, by looking at video as a continuous path in an image embedding space.
+
 ## Approach
-* A novel and principled multi-task loss to simultaneously learn various classification and
-regression losses of varying quantities and units using homoscedastic task uncertainty,
-* A unified architecture for semantic segmentation, instance segmentation and depth regression,
-* Demonstrating the importance of loss weighting in multi-task deep learning and how to
-obtain superior performance compared to equivalent separately trained models.
+* NLP models are usually trained on all the available text on the internet, we want to take advantage of this for open set video retrieval. 
+* We do this by projecting videos into an visual embedding, which lie in the same joint embedding space as of text, Following an approach similar to what CLIP did for images.
+* We first extend the this clip image based model to videos. Given a video our approach projects it into the joint embedding space. We evaluate the quality of this model using action recognition on kinetics. 
+* Then we remap the video classification model into retrieval setup.  Given a textual query, our setup retrieves all the videos in the video database that match the textual query.
 
-## Network Architecture
-![Network figure]({{site.baseurl}}/assets/img/ddsfdsdsafdsa.png)
-* Network uses the same encoder for all three tasks .
-* Decoder part is separate for each task
 
+### Baseline 
+![Network figure]({{site.baseurl}}/assets/img/afsfsdfdsasdfas2.png)
+* Towards the first contribution of converting image based CLIP to video classification. We establish the following baselines
+* In first visual embeddings are extracted individually for the frames, followed by max pooling.
+* In second each image is individually classified, followed by maj vote to make the final prediction.
+
+### Temproal fused using LSTM 
+![Network figure]({{site.baseurl}}/assets/img/afsfsdfdsasdfas3.png)
+* In further experimentation, we want to project an entire video as an embedding in the joint embedding space. 
+* Towards this we used a LSTM module that takes in series of image embeddings from the video and projects into a single embedding in the joint embedding space of GPT-3. 
+* Dot product of textual embedding with visual embedding to get classification logits. Trained this on kinetics, and will show results in the upcoming slides.
+
+### Temproal fused using Transformer 
+![Network figure]({{site.baseurl}}/assets/img/afsfsdfdsasdfas4.png)
+* We improved upon the previous approach by using a multi headed attention blocks to extract a visual embedding representing the input video. 
+
+
+### Retrieval 
+![Network figure]({{site.baseurl}}/assets/img/afsfsdfdsasdfas5.png)
+* Finally we remapped the video classification model for retrieval. Using this pipeline given any textual query we retrieve all the videos that match the textual query. 
+* To do this we use GPT-3 to first convert text query into an embedding. 
+* Then compute the visual embedding for all the videos in the database using our classification model.(This step only needs to be done once and can reused across queries).
+* And use the dot product between the video embeddings and text embedding to get similarity score. 
+* And returns the samples with highest similarity, dot product score. 
 
 
 
 ## Results
-![Results]({{site.baseurl}}/assets/img/gvsgadsdf.png)
-![Results]({{site.baseurl}}/assets/img/dsfdsfsdfsd.png)
+
+### Action Recognition
+![Results]({{site.baseurl}}/assets/img/afsfsdfdsasdfas6.png)
+![Results]({{site.baseurl}}/assets/img/afsfsdfdsasdfas7.png)
+![Results]({{site.baseurl}}/assets/img/afsfsdfdsasdfas8.png)
 
 
-## Authors
-Krishna Uppala, Shriti Priya, Vaidehi Joshi
+### Retrieval
+![Results]({{site.baseurl}}/assets/img/afsfsdfdsasdfas9.png)
+![Results]({{site.baseurl}}/assets/img/afsfsdfdsasdfas10.png)
+
+### Embeddings
+![Results]({{site.baseurl}}/assets/img/afsfsdfdsasdfas11.png)
+
+
+## Conclusions 
+* We wish to extend the work to caption/add subtitle to each frame in a video dataset.
+* For proof of concept, we have worked on 25 classes of Kinetics 400/700 dataset. In the future, we would be extending our work on the entire dataset with 400/700 classes.
+* We wish to see the performance on other complex datasets like MSR Action 3D  and RareAct dataset (unusual actions like “hammering a phone” and “drilling an egg).
+* We also wish to explore adversarial space of CLIP Models.
+
+## References
+[1]Tom B. Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal,Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, Sandhini Agarwal, ArielHerbert-Voss, Gretchen Krueger, Tom Henighan, Rewon Child, Aditya Ramesh, Daniel M.Ziegler, Jeffrey Wu, Clemens Winter, Christopher Hesse, Mark Chen, Eric Sigler, MateuszLitwin, Scott Gray, Benjamin Chess, Jack Clark, Christopher Berner, Sam McCandlish, AlecRadford, Ilya Sutskever, and Dario Amodei. Language models are few-shot learners. 2020.
+
+[2]J. Deng,  W. Dong,  R. Socher,  L.-J. Li,  K. Li,  and L. Fei-Fei.   ImageNet:  A Large-ScaleHierarchical Image Database. InCVPR09, 2009.
+
+[3]Christoph Feichtenhofer, Haoqi Fan, Jitendra Malik, and Kaiming He. Slowfast networks forvideo recognition, 2019.
+
+[4]Raghav Goyal, Samira Ebrahimi Kahou, Vincent Michalski, Joanna Materzy ́nska, SusanneWestphal, Heuna Kim, Valentin Haenel, Ingo Fruend, Peter Yianilos, Moritz Mueller-Freitag,Florian Hoppe, Christian Thurau, Ingo Bax, and Roland Memisevic. The "something something"video database for learning and evaluating visual common sense, 2017.
+
+[5]Jie Lei, Linjie Li, Luowei Zhou, Zhe Gan, Tamara L. Berg, Mohit Bansal, and Jingjing Liu.Less is more: Clipbert for video-and-language learning via sparse sampling, 2021.
+
+[6]Alec Radford, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agar-wal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, Gretchen Krueger, and IlyaSutskever. Learning transferable visual models from natural language supervision, 2021.
+
+[7]Motoki Sato, Jun Suzuki, Hiroyuki Shindo, and Yuji Matsumoto.  Interpretable adversarialperturbation in input embedding space for text.arXiv preprint arXiv:1805.02917, 2018.
+
+[8]Ramprasaath R. Selvaraju, Michael Cogswell, Abhishek Das, Ramakrishna Vedantam, DeviParikh, and Dhruv Batra. Grad-cam: Visual explanations from deep networks via gradient-basedlocalization, Oct 2019.
+
+[9]Lucas Smaira, João Carreira, Eric Noland, Ellen Clancy, Amy Wu, and Andrew Zisserman. Ashort note on the kinetics-700-2020 human action dataset, 2020.[10]Pedro Tabacof and Eduardo Valle. Exploring the space of adversarial images. In2016 Interna-tional Joint Conference on Neural Networks (IJCNN), pages 426–433. IEEE, 2016.
+
+
 
 ## Sources
 [Paper](https://arxiv.org/)
