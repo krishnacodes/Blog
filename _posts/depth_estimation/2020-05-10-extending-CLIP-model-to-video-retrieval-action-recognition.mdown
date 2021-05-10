@@ -1,22 +1,38 @@
 ---
 layout: post-wo-sidebar
-title: Multi-Task Learning Using Uncertainty to Weigh Losses for Scene Geometry and Semantics[arXiv May 17]
-date: 2017-12-05 15:47:20 +0300
+title: Extending CLIP model to Video Retrieval and Action Recognition
+date: 2020-05-10 15:47:20 +0300
 description: 
 img: ddsfdsdsafdsa.png
-tags: [CVPR, CVPR17, Depth Estimation]
-content_type: depth_estimaiton
+tags: VLR
+content_type: Retrieval, action recognition, multi modal
 ---
 
 
 
-## One Line Summary
-* Deep learning applications benefit from multi-task learning with multiple regression and classification objectives, a principled approach to multi-task deep learning which weighs multiple loss functions is presented.
+## Summary
+* Content Based Video Retrieval [egs: YouTube] is desirable because searches that rely purely on metadata are dependent on annotation quality and completeness. The presented architecture provides an efficient way of Text based Video Retrieval. 
+
+Also, our work is an extension of CLIP Model Action Recognition 
+[RN50x16], where they have used Mid-frame level approach to get an accuracy of 53.4%, while our method gives an improvement of 83.9% [LSTM] and 85.5% [Transformer] comparing to the SOTA on Kinetics 400 dataset 84.8%.
+
 
 ## Motivation
-* Performance of multi-task system is strongly dependent on the relative weighting
-between each task’s loss, tuning these weights by hand is a difficult and expensive
-process, making multi-task learning prohibitive in practice.
+* Restricted form of supervision in SOTA computer vision methods (trained on a fixed set of categories), limits their generality and usability for other visual concepts.
+
+* In such a scenario, to learn the new visual concepts, there should be some form of more context for the model to infer from.
+
+* Using  zero-shot transfer, natural language supervision, and multimodal learning provides this extra information useful to learn new visual concepts.
+
+* Using Open Set Recognition. 
+
+## Prior Work
+
+
+* Open Set Recognition with Conditional Probabilistic Generative Models [1] proposes an approach to reject the unknown samples for a model encountered in the real world data in open set conditions.
+* Unified Probabilistic Deep Continual Learning through Generative Replay and Open Set Recognition [2] also introduces a probabilistic approach to unify Open Set recognition by avoiding samples which are outside the known data classes
+* We aim to perform a kind of Open set recognition but without rejecting or avoiding input samples.
+To explore this approach more in the open set conditions, we perform our experiments for Video Retrieval from textual input using CLIP Model.
 
 ## Detailed Summary
 * Multi-task learning aims to improve learning efficiency, generalization and prediction accuracy by learning multiple objectives from a shared representation
