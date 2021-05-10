@@ -16,7 +16,7 @@ youtubeId: Rw1sW75gCug
 
 
 ## Video 
-{% include youtubePlayer.html id=page.youtubeId %}
+<center>{% include youtubePlayer.html id=page.youtubeId %}</center>
 
 ## Introduction
 * Content Based Video Retrieval [egs: YouTube] is desirable because searches that rely purely on metadata are dependent on annotation quality and completeness. The presented architecture provides an efficient way of Text based Video Retrieval. 
