@@ -44,11 +44,14 @@ youtubeId: lyxKU25Tlcs
 
 
 ### Image retrieval
-The neural network will be trained on text and visual embedding pairs to make it learn a mapping between text and corresponding images. Based on a supervised learning approach, labels, Image and text embedding will be used to match the unseen text data examples to a corresponding image. Likewise, we will achieve Image retrieval. 
+* The neural network will be trained on text and visual embedding pairs to make it learn a mapping between text and corresponding images. Based on a supervised learning approach, labels, Image and text embedding will be used to match the unseen text data examples to a corresponding image. 
+* Likewise, we will achieve Image retrieval. 
 
 ### Video based retrieval 
 
-Action recognition is one of the actively researched areas in computer vision. This has led to collection of large sized datasets like kinetics, something-something , AVA etc. Most of the work is focused on classifying the actions given temporal and spatial localized clips as an  input. A different stream of research that works on non localized input is also being explored. This works by first generating proposals from the input videos and later classifying the proposals. Our work focuses on a different way of exploring video understanding, by looking at video as a continuous path in an image embedding space.
+* Action recognition is one of the actively researched areas in computer vision. This has led to collection of large sized datasets like kinetics, something-something , AVA etc. 
+* Most of the work is focused on classifying the actions given temporal and spatial localized clips as an  input. A different stream of research that works on non localized input is also being explored. This works by first generating proposals from the input videos and later classifying the proposals. 
+* Our work focuses on a different way of exploring video understanding, by looking at video as a continuous path in an image embedding space.
 
 ## Approach
 * NLP models are usually trained on all the available text on the internet, we want to take advantage of this for open set video retrieval. 
