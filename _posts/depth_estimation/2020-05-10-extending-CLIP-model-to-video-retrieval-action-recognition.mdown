@@ -18,6 +18,9 @@ youtubeId: lyxKU25Tlcs
 ## Video 
 <center>{% include youtubePlayer.html id=page.youtubeId %}</center>
 
+## Website 
+[https://feedforward.github.io/blog/extending-CLIP-model-to-video-retrieval-action-recognition/](https://feedforward.github.io/blog/extending-CLIP-model-to-video-retrieval-action-recognition/)
+
 ## Introduction
 * Content Based Video Retrieval [egs: YouTube] is desirable because searches that rely purely on metadata are dependent on annotation quality and completeness. The presented architecture provides an efficient way of Text based Video Retrieval. 
 * Also, our work is an extension of CLIP Model Action Recognition 
